@@ -1,0 +1,17 @@
+.content{height:900px;margin: 0 auto;}
+ul{list-style-type: none;height: 70px;padding-top: 10px;margin-bottom: 10px;}
+#con{width:100%;height:100%; }
+#read{height:40px;width: 90%;margin: 0 auto;}
+#read input{display: block;float: left;}
+#read button{float: left;}
+.heapmap{width: 90%;height: 86%;margin: 0 auto;padding:2px;background-color: #ddd7d8;}
+.container{width: 100%;height: 100%;margin: 0 auto;padding:2px;}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+#tab-list{margin: 0 auto;}
+#ul1{border-bottom:2px solid #75487a;height: 50px;}
+#ul1 li{display: inline-block;width: 180px;line-height: 30px;text-align: center;margin-left: 10px;}
+#ul1 li:hover{cursor: pointer;}
+#ul1 li.active:hover{transform: scale(1.1.5);border-top-right-radius:0.5em;border-top-left-radius:0.5em;border-top: 1px solid #487a6f;border-left: 1px solid #487a6f;border-right: 1px solid #487a6f;}
+#tab-list div{display:block;float: left;width:1000px;height:400px;margin: 35px;}
+#tab-list div li{display:block;float:left;width:200px;height:314px;margin: 10px;box-shadow: 0 5px 20px #b2ccc5;padding: 22px;}

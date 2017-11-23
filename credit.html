@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>征信分析图</title>
+    <link type="text/css" rel="stylesheet" href="css/cred.css">
+    <link type="text/css" rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+</head>
+<body style="overflow-x:hidden">
+<div id="nv">
+    <ul class="nav nav-pills pull-right">
+        <!--<li id = "txt">车辆征信统计分析结果</li>-->
+        <li><a href="index.html"><img src="imgs/index.png" style="width: 29px;height: 29px;padding:3px" > 首页</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="imgs/maijia.png" style="width: 29px;height: 29px;padding:3px">联系我</a>
+            <ul class="dropdown-menu">
+                <li><img src="imgs/my.jpg" style="height: 184px; width:184px"></li>
+            </ul>
+        </li>
+        <li><a href="over.html"><img src="imgs/map.png" style="width: 29px;height: 29px;padding:3px">超限热力图展示</a></li>
+        <li><a href="credit.html"><img src="imgs/creditcard.png" style="width: 29px;height: 29px;padding:3px">征信分析</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div>
+        <ul id = "uu"></ul>
+    </div>
+    <div id = "con">
+        <div class="heapmap">
+            <div id="tab-list" class=" container">
+                <ul id="ul1">
+                    <img src="imgs/tongji.png" style="width: 30px;height: 30px"> <li class="active"  >交易金额与交易次数总览图</li><li>征信分数频率分布图</li>
+                </ul>
+                <div id="m1" style="width: 1000px;height:600px;">
+                    <script type="text/javascript" src="js/m1.js"></script>
+                    <div style="top:600px;position:absolute;width: 1200px;height:60px;margin: 0 auto;">
+                    <h style = "display: block;width: 700px;height:60px;margin: 0 auto;text-align: left;">[0,5000] 交易次数频率 第一区间[0,2],第二区间[2,5],第三区间[5,10],第四区间[10+]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区间单位：次<br>
+                    [5000,10000] 交易次数频率 第一区间[0,20],第二区间[20,30],第三区间[30,60],第四区间[60+]&nbsp;&nbsp;&nbsp;&nbsp;区间单位：次<br>
+                    [10000+] 交易次数频率 第一区间[0,40],第二区间[40,50],第三区间[50,70],第四区间[70+]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区间单位：次</h>
+                    </div>
+                </div>
+
+                <div  id="m2" style="width: 1000px;height:600px;display: none;">
+                    <script type="text/javascript" src="js/m2.js"></script>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <div class="txt">
+        <p>亲爱的小伙伴们<br>关于课程作业，无论是涉及功能、性能、安全还是UI等各方面<br>如果你有好的建议和想法，就在下方留言吧</p>
+    </div>
+    <div class="messb">
+        <form class="form-horizontal" role="form" method="post" action="thank.html" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"><span
+                        class="glyphicon glyphicon-user"></span></label>
+                <div class="col-lg-4">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="留下你的昵称或真实姓名吧">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="title" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"><span
+                        class="glyphicon glyphicon-bookmark"></span></label>
+
+                <div class="col-lg-4">
+                    <input type="text" id="title" name="title" class="form-control" placeholder="请告知是关于网站哪方面的建议呐">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="content" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"> <span
+                        class="glyphicon glyphicon-list-alt"></span></label>
+
+                <div class="col-lg-4">
+                    <textarea id="content" name="content" rows="6" cols="58" placeholder="尽情写出你的想法吧"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" style="width:100px" class="btn  btn-default  col-lg-offset-7 " name="submit" >
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsimg.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js" ></script>
+<script type="text/javascript" src="js/cre.js"></script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超限热力图</title>
+    <link type="text/css" rel="stylesheet" href="css/gcontent.css">
+    <link type="text/css" rel="stylesheet" href="css/foot.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+</head>
+<body style="overflow-x:hidden">
+<div id="nv">
+    <ul class="nav nav-pills pull-right">
+        <!--<li id = "txt">全国公路超限车辆热力分布图</li>-->
+        <li><a href="index.html"><img src="imgs/index.png" style="width: 29px;height: 29px;padding:3px" > 首页</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="imgs/maijia.png" style="width: 29px;height: 29px;padding:6px">联系我</a>
+            <ul class="dropdown-menu">
+                <li><img src="imgs/my.jpg" style="height: 184px; width:184px"></li>
+            </ul>
+        </li>
+        <li><a href="over.html"><img src="imgs/map.png" style="width: 29px;height: 29px;padding:6px">超限热力图展示</a></li>
+        <li><a href="credit.html"><img src="imgs/creditcard.png" style="width: 29px;height: 29px;padding:6px">征信分析</a></li>
+    </ul>
+</div>
+<div class="content">
+    <div>
+        <ul id = "uu"></ul>
+     </div>
+    <div class="all">
+
+    <div class="con">
+        <div class="b">
+            <div class="btn-info btn-lg" style="text-align: center;width: 50%;margin: 0 auto;" onclick="showtable()">刷新列表</div>
+        </div>
+        <div id="list" style="width:90%;height:93%;margin: 0 auto;"></div>
+    </div>
+    <div class="heapmap">
+        <div id="container"></div>
+        <div id="r-result">
+            <input type="button"  onclick="openHeatmap();" value="显示热力图"/><input type="button"  onclick="closeHeatmap();" value="关闭热力图"/>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="foot">
+    <div class="txt">
+        <p>亲爱的小伙伴们<br>关于课程作业，无论是涉及功能、性能、安全还是UI等各方面<br>如果你有好的建议和想法，就在下方留言吧</p>
+    </div>
+    <div class="messb">
+        <form class="form-horizontal" role="form" method="post" action="thank.html" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"><span
+                        class="glyphicon glyphicon-user"></span></label>
+                <div class="col-lg-4">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="留下你的昵称或真实姓名吧">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="title" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"><span
+                        class="glyphicon glyphicon-bookmark"></span></label>
+
+                <div class="col-lg-4">
+                    <input type="text" id="title" name="title" class="form-control" placeholder="请告知是关于网站哪方面的建议呐">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="content" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"> <span
+                        class="glyphicon glyphicon-list-alt"></span></label>
+
+                <div class="col-lg-4">
+                    <textarea id="content" name="content" rows="6" cols="58" placeholder="尽情写出你的想法吧"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" style="width:100px" class="btn  btn-default  col-lg-offset-7 " name="submit" >
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ULxlOhIPT4RamwBPKGj3klauB9G8ENR4"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsimg.js"></script>
+<script type="text/javascript" src="js/ban1.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js" ></script>
+<script type="text/javascript" src="js/showtable.js"></script>
+</html>

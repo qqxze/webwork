@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高速公路数据统计与分析可视化展示</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/banner1.css" />
+    <link type="text/css" rel="stylesheet" href="css/content.css"/>
+    <link type="text/css" rel="stylesheet" href="css/foot.css"/>
+</head>
+<body style="overflow-x:hidden">
+
+<div id="nv">
+    <ul class="nav nav-pills pull-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="imgs/maijia.png" style="width: 29px;height: 29px;padding:6px">联系我</a>
+            <ul class="dropdown-menu">
+                <li><img src="imgs/my.jpg" style="height: 184px; width:184px"></li>
+            </ul>
+        </li>
+        <li><a href="over.html"><img src="imgs/map.png" style="width: 29px;height: 29px;padding:6px">超限热力图展示</a></li>
+        <li><a href="credit.html"><img src="imgs/creditcard.png" style="width: 29px;height: 29px;padding:6px">征信分析</a></li>
+    </ul>
+</div>
+
+<div id="banner">
+    <div id="border"></div>
+
+    <div id="wrapper">
+
+        <div id="carousel">
+
+            <img src="imgs/toystory.jpg" width="250" height="250" />
+
+            <img src="imgs/rat.jpg" width="250" height="250" />
+
+            <img src="imgs/walle.jpg" width="250" height="250" />
+
+            <img src="imgs/bugs.jpg" width="250" height="250" />
+
+            <img src="imgs/incred.jpg" width="250" height="250" />
+
+        </div>
+
+    </div>
+
+    <div id="pager"></div>
+</div>
+<div class="content">
+    <div class="overdata"><a href="Data/overload/output0.csv" >超限车辆数据列表</a>
+        <table class="table" style="margin-top: 30px;">
+            <thead>
+            <tr>
+                <th>数据源</th>
+                <th>数据量</th>
+                <th>数据分析方法</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="width:300px;">2016年12月份超限车辆行驶GPS数据</td>
+                <td>47824KB</td>
+                <td>ST-Match匹配算法</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="overdata"><a href="Data/credit/201612">车辆征信数据列表</a>
+        <table class="table" style="margin-top: 30px;">
+            <thead>
+            <tr>
+                <th >数据源</th>
+                <th>数据量</th>
+                <th>数据统计方法</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td style="width:300px;">2016年12月份ETC收费数据</td>
+                <td style="width:247px;">194,396KB</td>
+                <td>频数、频率分布图</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div id="foot">
+    <div class="txt">
+        <p>亲爱的小伙伴们<br>关于课程作业，无论是涉及功能、性能、安全还是UI等各方面<br>如果你有好的建议和想法，就在下方留言吧</p>
+    </div>
+    <div class="messb">
+        <form class="form-horizontal" role="form" method="post" action="thank.html" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"><span
+                        class="glyphicon glyphicon-user"></span></label>
+                <div class="col-lg-4">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="留下你的昵称或真实姓名吧">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="title" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"><span
+                        class="glyphicon glyphicon-bookmark"></span></label>
+
+                <div class="col-lg-4">
+                    <input type="text" id="title" name="title" class="form-control" placeholder="请告知是关于网站哪方面的建议呐">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="content" class="col-lg-4 control-label" style="color: rgba(255,155,30,0.91)"> <span
+                        class="glyphicon glyphicon-list-alt"></span></label>
+
+                <div class="col-lg-4">
+                    <textarea id="content" name="content" rows="6" cols="58" placeholder="尽情写出你的想法吧"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" style="width:100px" class="btn  btn-default  col-lg-offset-7 " name="submit" >
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsimg.js"></script>
+<script type="text/javascript" src="js/ban1.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js" ></script>
+
+
+</body>
+</html>

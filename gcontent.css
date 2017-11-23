@@ -1,0 +1,9 @@
+.content{height:900px;margin: 0 auto;background-color: #ccddc0;padding-top: 20px;}
+ul{list-style-type: none;height: 40px;padding:10px;}
+#txt{display: block;width:500px;height:50px;margin-right:240px;margin-left: 240px;font-size: 35px;}
+#uu{border-bottom:2px solid #487a6f;height: 60px;}
+.all{display:block;width: 90%;height: 90%;margin: 0 auto;}
+.con{width:20%;height:99%;display: block;float:left;background-color: #ddbfb4;}
+.heapmap{display:block;width: 80%;height: 99%;float:left;background-color: #c0a16b;padding:2px;}
+#container{height:100%;width:100%;}
+#r-result{width:100%;}
